@@ -16,7 +16,6 @@ body{
 
        font-weight: bold;
        text-align: center;
-       font-style: italic;
        font-size: 50px;
        background-color: orange;
 
@@ -26,7 +25,7 @@ body{
 .imgCabecera{
 
     margin-left: 5%;
-    margin-top: -103px;
+    margin-top: -100px;
     width: 90px;
     float: left;
 
@@ -37,7 +36,7 @@ body{
 .imgCuenta{
 
   margin-left: 85%;
-  margin-top: -105px;
+  margin-top: -100px;
   width: 100px;
   float: left;
 
@@ -59,16 +58,7 @@ body{
 
 }
 
-.blank{
-	padding-top: 40px;
-	height: 80px;
-    text-align: center;
-    background-color: dimgray;
-    color: white;
-    font-weight: bold;
 
-
-}
 
 footer{
 
@@ -207,20 +197,82 @@ footer{
    transition:all 1s;
 }
 
+#confirmar {
+
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -1200px;
+
+
+}
+
+#confirmar:body {
+    overflow-y: hidden;
+	 overflow-x: scroll;
+    }
+
+
+#confirmar:target {
+
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   -webkit-transition:all 1s;
+   -moz-transition:all 1s;
+   transition:all 1s;
+}
+
 .popup-contenedor {
+    
+   position: relative;
+   margin:7% auto;
+   background-color: #399;
+   color:#333;
+   width: 80%;
+  
+   text-align: center;
+   font-size: 45px;
+
+}
+
+.popup-contenedor2 {
 
    position: relative;
    margin:7% auto;
-   padding:30px 50px;
-   background-color: #fafafa;
+   padding-top: 20px;
+   background-color: #399;
    color:#333;
-   width:50%;
+   width: 80%;
+   max-width: 555px;
+   text-align: center;
+   font-size: 28px;
+   
 }
-.popup-contenedor h2 {
-    text-align: center;
-    font-size: 44px;
 
+ input{
+  	 padding-top: 10px;
+  	 padding-bottom: 10px;
+	 text-align: center;
+	 font-size: 28px;
+	 margin-top: -60px;
+	 
 }
+ input#totalText{
+	 color: oldlace; 
+	 background-color: #399;
+	 border: 0;
+	 font-size: 48px;
+	 width: 180px;
+	 
+}
+
 a.popup-cerrar {
    position: absolute;
    top:3px;
@@ -231,6 +283,10 @@ a.popup-cerrar {
    text-decoration: none;
    line-height: 1;
    color:#fff;
+}
+.cantidad{
+	font-size: 30px;
+	
 }
 
 .pedido{
@@ -257,7 +313,8 @@ a.popup-cerrar {
     font-weight: bold;
     padding: 1em;
     text-align: center;
-    border-bottom-style: double;
+    background-color: #33E0FF  ;
+    
 
 
 }
@@ -267,7 +324,7 @@ a.popup-cerrar {
     font-weight: bold;
     padding: 1em;
     text-align: center;
-    border-bottom-style: double;
+  
 
 
 
@@ -278,7 +335,9 @@ a.popup-cerrar {
     font-weight: bold;
     padding: 1em;
     text-align: center;
-    border-bottom-style: double;
+    background-color: #33E0FF ;
+
+ 
 }
 .detalle-precio{
     font-family: monospace;
@@ -323,6 +382,40 @@ padding: 15px 25px;
 
 text-decoration: none;
 text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
+}
+
+.boton5{
+
+background-color: red;
+border-radius: 8px;
+color: #fff;
+display: inline-block;
+font-family: monospace;
+font-size: 18px;
+line-height: 1;
+padding: 20px 40px;
+
+text-decoration: none;
+text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
+}
+
+
+
+.botonConfirmar{
+
+background-color: #2dc234;
+border-radius: 8px;
+color: #fff;
+display: inline-block;
+font-family: monospace;
+font-size: 18px;
+line-height: 1;
+padding: 20px 35px;
+text-decoration: none;
+text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
+
+
+
 }
 
 #detalleModal1{
@@ -469,10 +562,10 @@ text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
   .popup-contenedor {
     position: relative;
     padding: 0px 80px;
-    background-color: #fafafa;
+    background-color: #399;
     color: #333;
     width: 50%;
-	height: 580px;
+
 }
 	.popup-contenedor h2 {
     text-align: center;
@@ -503,7 +596,7 @@ text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
 .espaciado{
 
   height: 60px;
-  padding-top: 8px;
+  padding-top: 15px;
   font-size: 12px;
 
 
@@ -630,6 +723,14 @@ text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
 	  margin-left: 82%;
 
 		}
+	input#totalText{
+	 color: oldlace; 
+	 background-color: #399;
+	 border: 0;
+	 font-size: 36px;
+	 width: 180px;
+	 
+}
 		
 	}
 	
@@ -638,11 +739,11 @@ text-shadow: 0 -1px 1px rgba(25, 123, 29, .7);
 
   
 	.titulo{
-	  font-size: 24px;
+	  font-size: 20px;
 	}
 	.imgCuenta {
     width: 70px;
-    margin-top: -65px;
+    margin-top: -67px;
     margin-left: 80%;
 }
 	
