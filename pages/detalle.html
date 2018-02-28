@@ -2,16 +2,19 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <title>Principal</title>
-
     <link rel="stylesheet" href="../css/estilos.css">
-    <script language="javascript" src="../js/jquery-3.2.1.min.js"></script>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body onload="leer();">
 
-  <header>
+  <header class="header">
 
 
       <div class="encabezado">
@@ -40,30 +43,33 @@
 </header>
 
 
- <div class="container">
-  
-                <div id="menu">
-                    <ul>
-                                     <li class="nivel1"><a href="producto.html" >Productos</a></li>
+<div class="contenido">
+  <div class="menu-contenedor">
+    <div id="menu">
+          <ul>
+                   <li class="nivel1"><a href="producto.html" >Productos</a></li>
 
 
 
-                                     <li class="nivel1"><a href="informatica.html" >Informática</a></li>
+                   <li class="nivel1"><a href="informatica.html" >Informática</a></li>
 
 
 
-                                     <li class="nivel1"><a href="electro.html" >Electrodomésticos</a></li>
+                   <li class="nivel1"><a href="electro.html" >Electrodomésticos</a></li>
 
 
 
-                                     <li  class="nivel1"><a href="celular.html" >Celulares</a></li>
+                   <li  class="nivel1"><a href="celular.html" >Celulares</a></li>
 
-                            </ul>
-         
+              
+
+          </ul>
+        </div>
 
       </div>
 
-     
+
+
       <div class="producto">
           <table class="tabla-contenido" border= 2px solid valign= "top" >
               <tr class="fila" >
@@ -108,36 +114,36 @@
 
                    </table>
 
-                    <br>
+
                    <div class="botones"  >
-                          
                            
                                           <a  onclick="detalleModal();" class="boton" href="#agregar" >Agregar</a>
 			                              <a class="boton2" href="javascript:history.back();" target="_blank">Atras</a>
 
                             
-                    
+
                    </div>
-                   
+
+
 
 
         </div>
 
     </div>
-    
-    <footer class="footer">
-       Marcos Acosta
 
-       <br>
-       Rodrigo González
-       <br>
 
-       Universidad Nacional de Canindeyú
-       <br>
-</footer>
+
 
 
 </body>
+         <footer>
+			Marcos Acosta
+			<br>
+			Rodrigo González
+			<br>
+			Universidad Nacional de Canindeyú
+			<br>
+		</footer>
 
         <script type="text/javascript">
 
@@ -324,7 +330,7 @@
     
     </div>
 
-    <script>
+ <script>
 
 
 
@@ -451,7 +457,6 @@
 
 
 </script>
-
 
 
 </html>

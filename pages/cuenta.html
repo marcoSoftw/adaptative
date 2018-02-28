@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Principal</title>
+
     <link rel="stylesheet" href="../css/estilos.css">
     <script language="javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 <body onload="cargar();">
 
-<header>
+<header class="header">
 
 
     <div class="encabezado">
@@ -33,33 +37,38 @@
       </div>
 </header>
 
-     <div class="container">
-    
-              <div id="menu">
-                 <ul>
-                                     <li class="nivel1"><a href="producto.html" >Productos</a></li>
+      <div class="contenido">
+        <div class="menu-contenedor">
+          <div id="menu">
+                <ul>
+                         <li class="nivel1"><a href="producto.html" >Productos</a></li>
 
 
 
-                                     <li class="nivel1"><a href="informatica.html" >Informática</a></li>
+                         <li class="nivel1"><a href="informatica.html" >Informática</a></li>
 
 
 
-                                     <li class="nivel1"><a href="electro.html" >Electrodomésticos</a></li>
+                         <li class="nivel1"><a href="electro.html" >Electrodomésticos</a></li>
 
 
 
-                                     <li  class="nivel1"><a href="celular.html" >Celulares</a></li>
+                         <li  class="nivel1"><a href="celular.html" >Celulares</a></li>
+
+                 
 
 
-
-
-                            </ul>
+                </ul>
               </div>
 
+          </div>
 
-       
+
+
+
+
           <div class="producto">
+            <br>
             <br>
             <table class="tabla-cuenta" border= 1px  id ="tabla"></table>
 
@@ -88,7 +97,7 @@
           <tr>
                     <td width="800px">
 
-                             <div id="saldoTexto">Saldo Disponible:</div>
+                             <div id="saldoTexto">Saldo Disponible Actualmente:</div>
 
                     </td>
 
@@ -123,25 +132,22 @@
     <div class="botones">
 
          <a  onclick="" class="boton" href="#confirmar" >Confirmar</a>
-         
-         <a class="boton2" href="javascript:history.back();" target="_blank">Cancelar</a>
-        
+         <a  onclick="" class="boton2" href="#" >Cancelar</a>
     </div>
 
 
-            </div>
-        </div>
-  
- 
+    </div>
+    </div>
+
     <script>
 
 
         var d = '<tr>'+
 
             '<th>Descripción</th>'+
-            '<th>Precio</th>'+
+            '<th>Precio </th>'+
             '<th>Cantidad</th>'+
-            '<th>Subtotal</th>'+
+            '<th>Subtotal </th>'+
 
             '</tr>';
 
@@ -163,7 +169,7 @@
 
           }else {
 
-           
+             console.log(datos.length)
 
          for (var i = 0; i < datos.length; i++) {
 
@@ -191,8 +197,7 @@
 
 
 
-}
-
+	 	}
 		
 		function confirmar(){
 			
@@ -226,7 +231,6 @@
 
 
     </script>
-
 
 
 </body>
